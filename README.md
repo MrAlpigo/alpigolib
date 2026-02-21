@@ -24,13 +24,6 @@ It is designed to be **simple**, **modular**, and **production-ready**. You inst
 ```bash
 pip install alpigolib
 ```
-
-For development or local testing:
-
-```bash
-pip install -e .
-```
-
 ---
 
 ## 🚀 Quick Start
