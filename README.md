@@ -139,7 +139,7 @@ log.debug("Debug details")
 
 ## 📄 License
 
-MIT License
+GPL3 License
 
 ---
 
