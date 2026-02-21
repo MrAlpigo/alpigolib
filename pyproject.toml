@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alpigolib"
+version = "0.5.0"
+description = "alpigolib is an easy-to-use Python library for AI, system, network, crypto and developer utilities."
+authors = [
+    { name = "Alpigo", email = "alpigo@alpigo.dev" }
+]
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+
+dependencies = [
+    "psutil",          # system / battery
+    "requests",        # network (public IP, APIs)
+    "cryptography"     # crypto (encrypt / decrypt)
+]
+
+[project.urls]
+Homepage = "https://github.com/alpigo/alpigolib"
+Repository = "https://github.com/alpigo/alpigolib"
+Issues = "https://github.com/alpigo/alpigolib/issues"
+
+[tool.setuptools.packages.find]
+include = ["alpigolib*"]

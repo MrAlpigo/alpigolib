@@ -1,0 +1,149 @@
+# alpigolib
+
+**alpigolib** is a modern, easy-to-use Python library that provides a collection of utilities for everyday development needs — from system and network inspection to cryptography, logging, and AI-related helpers.
+
+It is designed to be **simple**, **modular**, and **production-ready**. You install it once and keep using it across all your projects.
+
+> Think of alpigolib as a *developer-friendly toolbox* rather than a single-purpose library.
+
+---
+
+## ✨ Features
+
+* 🖥️ **System utilities** – OS, version, battery, hardware-related info
+* 🌐 **Network tools** – connectivity checks, local/public IP, MAC address
+* 🧩 **Utils** – UUIDs, hashing, timestamps, slugify, random helpers
+* 🔐 **Crypto** – hashing, encryption/decryption, secure key generation
+* 🪵 **Logger** – clean, colored console logging with optional file output
+* 🤖 **AI-ready architecture** – designed to grow with AI integrations
+
+---
+
+## 📦 Installation
+
+```bash
+pip install alpigolib
+```
+
+For development or local testing:
+
+```bash
+pip install -e .
+```
+
+---
+
+## 🚀 Quick Start
+
+```python
+from alpigolib.utils import Utils
+from alpigolib.system import System
+from alpigolib.network import Network
+from alpigolib.crypto import Crypto
+from alpigolib.logger import Logger
+```
+
+---
+
+## 🧩 Utils Module
+
+```python
+from alpigolib.utils import Utils
+
+Utils.uuid()
+Utils.timestamp()
+Utils.hash("alpigo")
+Utils.slugify("Alpigo's Easy Library")
+Utils.random_int(1, 10)
+```
+
+---
+
+## 🖥️ System Module
+
+```python
+from alpigolib.system import System
+
+System.osName()
+System.osVersion()
+System.osBattery()
+```
+
+---
+
+## 🌐 Network Module
+
+```python
+from alpigolib.network import Network
+
+Network.isOnline()
+Network.localIP()
+Network.publicIP()
+Network.mac()
+```
+
+---
+
+## 🔐 Crypto Module
+
+```python
+from alpigolib.crypto import Crypto
+
+# Hashing
+Crypto.hash("secret")
+
+# Encryption
+key = Crypto.generate_key()
+enc = Crypto.encrypt("top secret", key)
+dec = Crypto.decrypt(enc, key)
+
+# Password strength
+Crypto.password_strength("Alpigo123!")
+```
+
+---
+
+## 🪵 Logger Module
+
+```python
+from alpigolib.logger import Logger
+
+log = Logger(name="app", logfile="logs/app.log", debug=True)
+
+log.info("Application started")
+log.warn("Something looks odd")
+log.error("Something went wrong")
+log.debug("Debug details")
+```
+
+---
+
+## 🧠 Design Philosophy
+
+* **Easy by default** – minimal configuration
+* **Modular** – use only what you need
+* **Readable API** – intuitive method names
+* **No magic** – explicit, predictable behavior
+
+---
+
+## 🛣️ Roadmap
+
+* [ ] Extended AI helpers
+* [ ] Hardware & performance metrics
+* [ ] Config & environment manager
+* [ ] Plugin system
+* [ ] CLI tools (optional)
+
+---
+
+## 📄 License
+
+MIT License
+
+---
+
+## 👤 Author
+
+**Alpigo**
+📧 [alpigo@alpigo.dev](mailto:alpigo@alpigo.dev)
